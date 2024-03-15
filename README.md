@@ -13,9 +13,9 @@ Um Aplicativo cujo o Objetivo é ajudar a programadores novos na area e pessoas 
 ## ✒️ Autores
 
 
-* **Joao Vitor Diamon** - *BackEnd* - [](https://github.com/JoaoVitorDiamon)
-* **Gustavo Santos** - *Banco de Dados* - [](https://github.com/GustavoSantos777)
-* **Fabio Andrade** - *BackEnd* - [](https://github.com/FabioSouzaOrcus09)
-* **Guilherme Araujo** - *Banco de Dados* - [](https://github.com/GuilhermeAraujo539)
-* **Nicole Gonçalves** - *FrontEnd* - [](https://github.com/NicoleOG12)
-* **Julia Lins** - *FrontEnd* - [](https://github.com/linsjulia)
+* [**Joao Vitor Diamon**](https://github.com/JoaoVitorDiamon)*BackEnd*
+* [**Fabio Andrade**](https://github.com/FabioSouzaOrcus09) - *BackEnd* 
+* [**Gustavo Santos**](https://github.com/GustavoSantos777)- *Banco de Dados* 
+* [**Guilherme Araujo**](https://github.com/GuilhermeAraujo539)- *Banco de Dados* 
+* [**Nicole Gonçalves**](https://github.com/NicoleOG12) - *FrontEnd* 
+*  [**Julia Lins**](https://github.com/linsjulia) - *FrontEnd*
