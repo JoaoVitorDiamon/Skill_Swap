@@ -53,8 +53,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -78,13 +78,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Comfortaa
+    - family: Inter
       fonts:
-        - asset: assets/fonts/Comfortaa-VariableFont_wght.ttf
+        - asset: assets/fonts/Inter.ttf
     - family: Julius Sans One
       fonts:
         - asset: assets/fonts/JuliusSansOne-Regular.ttf
-
+        
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
