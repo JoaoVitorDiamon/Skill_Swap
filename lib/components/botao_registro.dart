@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BotaoLogin extends StatelessWidget {
-  const BotaoLogin({super.key});
+class BotaoRegistro extends StatelessWidget {
+  const BotaoRegistro({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,8 @@ class BotaoLogin extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: <Color>[
-                      Color(0xFF18FFC6),
-                      Color(0xFF14366F),
+                      Color.fromARGB(134, 34, 78, 70),
+                      Color.fromARGB(126, 57, 184, 152),
                     ],
                   ),
                 ),
@@ -26,13 +26,14 @@ class BotaoLogin extends StatelessWidget {
             ),
             TextButton(
                 style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(15),
-                    textStyle: const TextStyle(fontSize: 20)),
+                    padding: const EdgeInsets.all(5),
+                    textStyle: const TextStyle(fontSize: 15)),
                 onPressed: () {},
                 child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 35),
+                  padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
                   child: Text(
-                    "Conectar-se",
+                    "Não possui uma conta?\n Cadastre-se aqui",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Comfortaa',

@@ -1,28 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:skill_swap/pages/tela_login.dart';
+import 'components/color.dart';
+import 'pages/pagina_login.dart';
 
 void main() {
-  runApp(const HomePage());
+  runApp(const InicalPage());
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class InicalPage extends StatelessWidget {
+  const InicalPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-
-        // Define the default brightness and colors.
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF18FFC6),
-          // ···
+          seedColor: corPrimaria,
           brightness: Brightness.dark,
         ),
       ),
-      home: const LoginForms(),
+      debugShowCheckedModeBanner: false,
+      home: const LoginPage(),
     );
   }
 }
