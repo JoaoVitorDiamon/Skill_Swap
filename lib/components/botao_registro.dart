@@ -26,7 +26,7 @@ class BotaoRegistro extends StatelessWidget {
             ),
             TextButton(
                 style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(14),
                     textStyle: const TextStyle(fontSize: 15)),
                 onPressed: () {},
                 child: const Padding(
@@ -37,6 +37,7 @@ class BotaoRegistro extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontFamily: 'Comfortaa',
+                        fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
                 ))

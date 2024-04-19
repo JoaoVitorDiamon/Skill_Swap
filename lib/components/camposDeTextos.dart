@@ -20,9 +20,10 @@ class CampoDeTexto extends StatelessWidget {
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
                 borderSide: BorderSide.none),
-            hintText: hint,
+            labelText: hint,
+            labelStyle: TextStyle(fontFamily: 'Comfortaa'),
             isDense: true,
-            hintStyle: TextStyle(fontFamily: 'Comfortaa')),
+            ),
       ),
     );
   }

@@ -15,11 +15,12 @@ class BotaoLogin extends StatelessWidget {
           ),
         ),
         onPressed: () {},
-        child: Text(
+        child: const Text(
           "Conectar-Se",
           style: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontFamily: 'Comfortaa',
+              fontSize: 18,
               fontWeight: FontWeight.w900),
         ),
       ),

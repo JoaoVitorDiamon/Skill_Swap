@@ -24,61 +24,64 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           Center(
-            child: Container(
-              width: 350,
-              height: 530,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                border: Border.all(color: corPrimaria),
-              ),
-              child: Column(
-                children: [
-                  const Center(
-                    child: Padding(
-                      padding: EdgeInsets.fromLTRB(0, 70, 0, 30),
-                      child: TextoNeon(
-                        texto: "Login",
-                      ),
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        child: CampoDeTexto(
-                          isPassword: true,
-                          hint: "Email:",
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(0,0,0,70),
+              child: Container(
+                width: 350,
+                height: 530,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  border: Border.all(color: corPrimaria),
+                ),
+                child: Column(
+                  children: [
+                    const Center(
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(0, 70, 0, 30),
+                        child: TextoNeon(
+                          texto: "Login",
                         ),
                       ),
-                      const CampoDeTexto(
-                        hint: "Senha:",
-                        isPassword: true,
-                      ),
-
-                      // Cor e largura da borda
-                      Center(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                              child: TextButton(
-                                onPressed: () {},
-                                child: const Text(
-                                  "Esqueci minha senha",
-                                  style: TextStyle(
-                                    fontFamily: "Comfortaa",
-                                    color: Color(0xFFFFFFFF),
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          child: CampoDeTexto(
+                            isPassword: true,
+                            hint: "Email:",
+                          ),
+                        ),
+                        const CampoDeTexto(
+                          hint: "Senha:",
+                          isPassword: true,
+                        ),
+              
+                        // Cor e largura da borda
+                        Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: const Text(
+                                    "Esqueci minha senha",
+                                    style: TextStyle(
+                                      fontFamily: "Comfortaa",
+                                      color: Color(0xFFFFFFFF),
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      const BotaoLogin(),
-                    ],
-                  ),
-                ],
+                        const BotaoLogin(),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -87,7 +90,7 @@ class LoginPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.all(30),
+                padding: const EdgeInsets.all(25),
                 child: BotaoRegistro(),
               ),
             ],
