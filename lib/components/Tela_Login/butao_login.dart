@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:skill_swap/components/color.dart';
 
 class BotaoLogin extends StatelessWidget {
   const BotaoLogin({super.key});

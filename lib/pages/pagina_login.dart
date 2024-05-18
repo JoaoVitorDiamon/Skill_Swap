@@ -1,11 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:skill_swap/components/color.dart';
-import 'package:skill_swap/components/texto_neon.dart';
+import '../components/color.dart';
+import '../components/Tela_Login/background.dart';
+import '../components/Tela_Login/bodyText.dart';
 import '../components/botao_registro.dart';
-import '../components/butao_login.dart';
-import '../components/camposDeTextos.dart';
+import '../components/Tela_Login/textLogin.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -13,19 +11,17 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: new Stack(
+      body: Stack(
         children: <Widget>[
-          new Container(
-            decoration: new BoxDecoration(
-              image: new DecorationImage(
-                image: new AssetImage("assets/images/background1.png"),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
+          /// Este trecho de código está definindo um widget Flutter chamado `BackgroundImage` que
+          /// exibe uma imagem como plano de fundo.
+          const BackgroundImage(),
+
+          /// Esta parte do código está criando um contêiner centralizado com
+          /// dimensões e estilo. Aqui está um resumo do que está fazendo e com as Bordas Ciano:
           Center(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0,0,0,70),
+              padding: const EdgeInsets.fromLTRB(0, 0, 0, 70),
               child: Container(
                 width: 350,
                 height: 530,
@@ -33,64 +29,28 @@ class LoginPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20.0),
                   border: Border.all(color: corPrimaria),
                 ),
-                child: Column(
+
+                // Esta parte do código está definindo um widget `Column` dentro do
+                //contêiner. Dentro desta `Coluna`, existem os componentes principais sendo eles o Titulo Login:
+                child: const Column(
                   children: [
-                    const Center(
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(0, 70, 0, 30),
-                        child: TextoNeon(
-                          texto: "Login",
-                        ),
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          child: CampoDeTexto(
-                            isPassword: true,
-                            hint: "Email:",
-                          ),
-                        ),
-                        const CampoDeTexto(
-                          hint: "Senha:",
-                          isPassword: true,
-                        ),
-              
-                        // Cor e largura da borda
-                        Center(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                child: TextButton(
-                                  onPressed: () {},
-                                  child: const Text(
-                                    "Esqueci minha senha",
-                                    style: TextStyle(
-                                      fontFamily: "Comfortaa",
-                                      color: Color(0xFFFFFFFF),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const BotaoLogin(),
-                      ],
-                    ),
+                    //Texto de Login
+                    TextLogin(),
+
+                    //Aqui fica o Corpo do Login
+                    CorpoDoLogin(),
                   ],
                 ),
               ),
             ),
           ),
-          Center(
+          //Aqui fica o Botao de Registro:
+          const Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: const EdgeInsets.all(25),
+                padding: EdgeInsets.all(25),
                 child: BotaoRegistro(),
               ),
             ],

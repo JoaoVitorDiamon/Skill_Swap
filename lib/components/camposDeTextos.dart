@@ -10,20 +10,20 @@ class CampoDeTexto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: TextFormField(
         obscureText: isPassword,
         decoration: InputDecoration(
-            filled: true,
-            fillColor: corFundoTexto,
-            focusColor: corPrimaria,
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(20),
-                borderSide: BorderSide.none),
-            labelText: hint,
-            labelStyle: TextStyle(fontFamily: 'Comfortaa'),
-            isDense: true,
-            ),
+          filled: true,
+          fillColor: corFundoTexto,
+          focusColor: corPrimaria,
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(20),
+              borderSide: BorderSide.none),
+          labelText: hint,
+          labelStyle: const TextStyle(fontFamily: 'Comfortaa'),
+          isDense: true,
+        ),
       ),
     );
   }
