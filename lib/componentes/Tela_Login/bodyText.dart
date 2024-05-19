@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'butao_login.dart';
-import 'camposDeTextos.dart';
+import 'components/camposDeTextos.dart';
+import 'components/butao_login.dart';
 
-class BodyFields extends StatelessWidget {
-  const BodyFields({super.key});
+class CorpoDoLogin extends StatelessWidget {
+  const CorpoDoLogin({super.key});
 
   @override
 

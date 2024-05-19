@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../assets/componentes/texto_neon.dart';
+import 'texto_neon.dart';
 
 class TextLogin extends StatelessWidget {
   const TextLogin({super.key});

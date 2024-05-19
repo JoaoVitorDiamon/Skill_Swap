@@ -13,7 +13,7 @@ class TextoNeon extends StatelessWidget {
   Widget build(BuildContext context) {
     return NeonText(
       text: texto,
-      spreadColor: Color(0xFF3DFFDC),
+      spreadColor: const Color(0xFF3DFFDC),
       blurRadius: 4,
       textSize: 30,
       textColor: Color(0xFF3DFFDC),
