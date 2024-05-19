@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'components/camposDeTextos.dart';
-import 'components/butao_login.dart';
+import 'components/botao_login.dart';
 
 class CorpoDoLogin extends StatelessWidget {
   const CorpoDoLogin({super.key});

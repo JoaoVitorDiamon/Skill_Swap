@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../components/color.dart';
-import '../components/Tela_Login/background.dart';
-import '../components/Tela_Login/bodyText.dart';
-import '../components/botao_registro.dart';
-import '../components/Tela_Login/textLogin.dart';
+import '../componentes/color.dart';
+import '../componentes/Login/background.dart';
+import '../componentes/Login/bodyText.dart';
+import '../componentes/Login/components/botao_registro.dart';
+import '../componentes/Login/textLogin.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -15,7 +15,6 @@ class LoginPage extends StatelessWidget {
         children: <Widget>[
           /// Este trecho de código está definindo um widget Flutter chamado `BackgroundImage` que
           /// exibe uma imagem como plano de fundo.
-          const BackgroundImage(),
 
           /// Esta parte do código está criando um contêiner centralizado com
           /// dimensões e estilo. Aqui está um resumo do que está fazendo e com as Bordas Ciano:
@@ -32,8 +31,12 @@ class LoginPage extends StatelessWidget {
 
                 // Esta parte do código está definindo um widget `Column` dentro do
                 //contêiner. Dentro desta `Coluna`, existem os componentes principais sendo eles o Titulo Login:
+
                 child: const Column(
                   children: [
+                    BackgroundImage(
+                      image: "assets/images/background1.png",
+                    ),
                     //Texto de Login
                     TextLogin(),
 
@@ -44,6 +47,7 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
+
           //Aqui fica o Botao de Registro:
           const Center(
               child: Column(
@@ -51,7 +55,9 @@ class LoginPage extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.all(25),
-                child: BotaoRegistro(),
+                child: BotaoRegistro(
+                  texto: "Não possui uma conta?\n Cadastre-se aqui",
+                ),
               ),
             ],
           ))

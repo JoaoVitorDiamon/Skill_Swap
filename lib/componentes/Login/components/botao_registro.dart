@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BotaoRegistro extends StatelessWidget {
-  const BotaoRegistro({super.key});
+  final String texto;
+  const BotaoRegistro({super.key, required this.texto});
 
   @override
   Widget build(BuildContext context) {
@@ -29,12 +30,12 @@ class BotaoRegistro extends StatelessWidget {
                     padding: const EdgeInsets.all(14),
                     textStyle: const TextStyle(fontSize: 15)),
                 onPressed: () {},
-                child: const Padding(
+                child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
                   child: Text(
-                    "Não possui uma conta?\n Cadastre-se aqui",
+                    texto,
                     textAlign: TextAlign.center,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontFamily: 'Comfortaa',
                         fontSize: 15,
