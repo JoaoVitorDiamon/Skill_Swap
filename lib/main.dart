@@ -17,12 +17,14 @@ class InicalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        //* Tema do Aplicativo
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: corPrimaria,
           brightness: Brightness.dark,
         ),
       ),
+      //*
       debugShowCheckedModeBanner: false,
       home: const RegistroEmpresa(),
     );

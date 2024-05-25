@@ -7,13 +7,10 @@ class CorpoDoLogin extends StatelessWidget {
   const CorpoDoLogin({super.key});
 
   @override
-
-  //um widget "Column" é retornado, que
-  //organiza seus filhos verticalmente tendo os Input do Email e da Senha, junto com o Botao de Logar.
-
   Widget build(BuildContext context) {
     return Column(
       children: [
+        //* Forms Aparente na Pagina Login
         const CampoDeTexto(
           isPassword: true,
           hint: "Email:",
@@ -22,6 +19,9 @@ class CorpoDoLogin extends StatelessWidget {
           hint: "Senha:",
           isPassword: true,
         ),
+        //*
+
+        //! Botao Esqueci Minha Senha
         Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -42,7 +42,11 @@ class CorpoDoLogin extends StatelessWidget {
             ],
           ),
         ),
+        //!
+
+        //todo\\Botao de Login
         const BotaoLogin(),
+        //todo
       ],
     );
   }

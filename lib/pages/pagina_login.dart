@@ -13,42 +13,45 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          /// Este trecho de código está definindo um widget Flutter chamado `BackgroundImage` que
-          /// exibe uma imagem como plano de fundo.
-
-          /// Esta parte do código está criando um contêiner centralizado com
-          /// dimensões e estilo. Aqui está um resumo do que está fazendo e com as Bordas Ciano:
           Center(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(0, 0, 0, 70),
               child: Container(
+                //?-Tamanho do Contanier
                 width: 350,
                 height: 530,
+                //?-/////////////
+
+                //* Aparencia do Containier (Cor,Bordas,ETC)
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   border: Border.all(color: corPrimaria),
                 ),
-
-                // Esta parte do código está definindo um widget `Column` dentro do
-                //contêiner. Dentro desta `Coluna`, existem os componentes principais sendo eles o Titulo Login:
+                //*
 
                 child: const Column(
                   children: [
+                    //!Widget de Imagem de Fundo
                     BackgroundImage(
                       image: "assets/images/background1.png",
                     ),
-                    //Texto de Login
-                    TextLogin(),
+                    //!
 
-                    //Aqui fica o Corpo do Login
+                    //*Titulo Login
+                    TextLogin(),
+                    //*
+
+                    //todo Aqui fica a Parte dos Formularios
                     CorpoDoLogin(),
+                    //todo
                   ],
                 ),
               ),
             ),
           ),
 
-          //Aqui fica o Botao de Registro:
+          //!Aqui fica o Botao de Registro:
+
           const Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -60,7 +63,9 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ],
-          ))
+          )),
+
+          //!
         ],
       ),
     );

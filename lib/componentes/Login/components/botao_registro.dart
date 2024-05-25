@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:skill_swap/pages/pagina_tipoDeCadastro.dart';
 
-class BotaoRegistro extends StatelessWidget {
+class BotaoRegistro extends StatefulWidget {
   final String texto;
   const BotaoRegistro({super.key, required this.texto});
 
+  @override
+  State<BotaoRegistro> createState() => _BotaoRegistroState();
+}
+
+class _BotaoRegistroState extends State<BotaoRegistro> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -13,6 +19,7 @@ class BotaoRegistro extends StatelessWidget {
           children: <Widget>[
             Positioned.fill(
               child: Container(
+                //* Gradiente do Botao
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
@@ -25,15 +32,24 @@ class BotaoRegistro extends StatelessWidget {
                 ),
               ),
             ),
+            //*
+
+            //! Botao Registro
             TextButton(
                 style: TextButton.styleFrom(
                     padding: const EdgeInsets.all(14),
                     textStyle: const TextStyle(fontSize: 15)),
-                onPressed: () {},
+                onPressed: () {
+                  //todo Redirecionamento Para Tipo de Cadastro
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (_) => const TipoDeCadastro()));
+                },
+                //todo\\
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 3),
                   child: Text(
-                    texto,
+                    widget.texto,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                         color: Colors.white,
@@ -41,7 +57,8 @@ class BotaoRegistro extends StatelessWidget {
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                ))
+                )),
+            //!
           ],
         ),
       ),

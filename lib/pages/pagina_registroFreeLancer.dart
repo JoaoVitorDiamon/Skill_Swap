@@ -5,14 +5,14 @@ import '../componentes/Login/components/camposDeTextos.dart';
 import '../componentes/Login/components/texto_neon.dart';
 import '../componentes/color.dart';
 
-class RegistroEmpresa extends StatefulWidget {
-  const RegistroEmpresa({super.key});
+class RegistroFreeLancer extends StatefulWidget {
+  const RegistroFreeLancer({super.key});
 
   @override
-  State<RegistroEmpresa> createState() => _RegistroEmpresaState();
+  State<RegistroFreeLancer> createState() => _RegistroFreeLancerState();
 }
 
-class _RegistroEmpresaState extends State<RegistroEmpresa> {
+class _RegistroFreeLancerState extends State<RegistroFreeLancer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class _RegistroEmpresaState extends State<RegistroEmpresa> {
                       isPassword: false,
                     ),
                     CampoDeTexto(
-                      hint: "Cnpj",
+                      hint: "Cpf",
                       isPassword: false,
                     ),
                     CampoDeTexto(
