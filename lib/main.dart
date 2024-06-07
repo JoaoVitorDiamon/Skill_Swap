@@ -4,6 +4,7 @@ import 'package:skill_swap/pages/pagina_login.dart';
 import 'package:skill_swap/pages/pagina_tipoDeCadastro.dart';
 import 'componentes/color.dart';
 import 'pages/pagina_registroEmpresa.dart';
+import 'pages/pagina_perfil.dart';
 // import 'pages/pagina_login.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class InicalPage extends StatelessWidget {
       ),
       //*
       debugShowCheckedModeBanner: false,
-      home: const RegistroEmpresa(),
+      home: const tela_perfil(),
     );
   }
 }
