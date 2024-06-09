@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:skill_swap/componentes/Login/textLogin.dart';
 import 'package:skill_swap/pages/pagina_login.dart';
+import 'package:skill_swap/pages/pagina_notificacao.dart';
+import 'package:skill_swap/pages/pagina_pesquisa.dart';
 import 'package:skill_swap/pages/pagina_tipoDeCadastro.dart';
 import 'componentes/color.dart';
 import 'pages/pagina_registroEmpresa.dart';
@@ -17,17 +19,16 @@ class InicalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        //* Tema do Aplicativo
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: corPrimaria,
-          brightness: Brightness.dark,
+        theme: ThemeData(
+          //* Tema do Aplicativo
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: corPrimaria,
+            brightness: Brightness.dark,
+          ),
         ),
-      ),
-      //*
-      debugShowCheckedModeBanner: false,
-      home: const tela_perfil(),
-    );
+        //*
+        debugShowCheckedModeBanner: false,
+        home: LoginPage());
   }
 }
