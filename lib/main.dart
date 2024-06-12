@@ -29,6 +29,6 @@ class InicalPage extends StatelessWidget {
         ),
         //*
         debugShowCheckedModeBanner: false,
-        home: LoginPage());
+        home: MeuApp());
   }
 }
